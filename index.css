@@ -1,0 +1,18 @@
+
+.card-img-top {
+    background-size: cover;
+    min-height: 180px;
+    background-position: center;
+  }
+  
+  .card-group {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
+  .card{
+      margin-right: 100px;
+  }
+  .card-title{
+      color: green;
+  }
