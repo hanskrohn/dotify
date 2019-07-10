@@ -1811,3 +1811,517 @@ Processing by SongsController#index as HTML
 Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/controller/show/kanye" for ::1 at 2019-07-09 14:34:55 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/hanskrohn/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+OmniAuth::NoSessionError (You must provide a session to use OmniAuth.):
+  
+omniauth (1.9.0) lib/omniauth/strategy.rb:180:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.0) lib/omniauth/builder.rb:64:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/callback" for ::1 at 2019-07-09 14:55:08 -0500
+  
+OmniAuth::NoSessionError (You must provide a session to use OmniAuth.):
+  
+omniauth (1.9.0) lib/omniauth/strategy.rb:180:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.0) lib/omniauth/builder.rb:64:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/callback" for ::1 at 2019-07-09 14:55:53 -0500
+  
+OmniAuth::NoSessionError (You must provide a session to use OmniAuth.):
+  
+omniauth (1.9.0) lib/omniauth/strategy.rb:180:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.0) lib/omniauth/builder.rb:64:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2019-07-09 14:55:53 -0500
+  
+OmniAuth::NoSessionError (You must provide a session to use OmniAuth.):
+  
+omniauth (1.9.0) lib/omniauth/strategy.rb:180:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.0) lib/omniauth/builder.rb:64:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/callback" for ::1 at 2019-07-09 14:55:59 -0500
+  
+OmniAuth::NoSessionError (You must provide a session to use OmniAuth.):
+  
+omniauth (1.9.0) lib/omniauth/strategy.rb:180:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.0) lib/omniauth/builder.rb:64:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2019-07-09 14:55:59 -0500
+  
+OmniAuth::NoSessionError (You must provide a session to use OmniAuth.):
+  
+omniauth (1.9.0) lib/omniauth/strategy.rb:180:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.0) lib/omniauth/builder.rb:64:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/callback" for ::1 at 2019-07-09 14:56:47 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/hanskrohn/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SongsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-07-09 14:56:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/callback" for ::1 at 2019-07-09 14:57:36 -0500
+Processing by SongsController#index as HTML
+Completed 500 Internal Server Error in 108457ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/songs_controller.rb:5:in `index'
+Started GET "/callback" for ::1 at 2019-07-09 14:59:46 -0500
+Processing by SongsController#index as HTML
+Completed 500 Internal Server Error in 66773ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/songs_controller.rb:5:in `index'
+Started GET "/" for ::1 at 2019-07-09 16:02:15 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/hanskrohn/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/hanskrohn/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (7.3ms)
+Completed 200 OK in 33ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-07-09 16:02:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/songs" for ::1 at 2019-07-09 16:03:02 -0500
+Processing by SongsController#index as HTML
+Completed 200 OK in 10596ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/songs" for ::1 at 2019-07-09 16:03:12 -0500
+Processing by SongsController#index as HTML
+Completed 200 OK in 2914ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/songs" for ::1 at 2019-07-09 16:22:50 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/hanskrohn/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SongsController#index as HTML
+Completed 500 Internal Server Error in 17941389ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/songs_controller.rb:5:in `index'
+Started GET "/callback" for ::1 at 2019-07-10 09:23:52 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/hanskrohn/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SongsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?code=AQB-9RrSzbbvwH_16MAPLArAEyYqtT4AYBGXMpHqA6yV21yr8dOQ4FvH09Qvt-zcos30q3ECYfxtKcCdcPg_UuZOfgJUwnKg1AZoBBIV_bdSfj35s6Tbgt0QwNpPdbfLCrHGAkNK11lgpTXJSyV5fpwjIf-o30AIYsXuTZ9GYvur9ImW3VFa_YDnEAa1GKvxZDbzF3ZLcS-QqdqMLkOAA8RkUkvH7k5UXUi3qMCv-FiXd3hlMQ0CyT5RJg8vauX93zwhyeyCICSu1ClCdPip" for ::1 at 2019-07-10 09:24:10 -0500
+Processing by SongsController#index as HTML
+  Parameters: {"code"=>"AQB-9RrSzbbvwH_16MAPLArAEyYqtT4AYBGXMpHqA6yV21yr8dOQ4FvH09Qvt-zcos30q3ECYfxtKcCdcPg_UuZOfgJUwnKg1AZoBBIV_bdSfj35s6Tbgt0QwNpPdbfLCrHGAkNK11lgpTXJSyV5fpwjIf-o30AIYsXuTZ9GYvur9ImW3VFa_YDnEAa1GKvxZDbzF3ZLcS-QqdqMLkOAA8RkUkvH7k5UXUi3qMCv-FiXd3hlMQ0CyT5RJg8vauX93zwhyeyCICSu1ClCdPip"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?code=AQAbJOFzMn3bJUqEviY98gKTPVHbzs9Aa9PMv_RzTKPeWUO0HVRyYJonki9xzHMdIkKzEU-sq5LpFVSb4bNg5L_Vt-S7pxxiLvISV143q4jPoQyDAK1DnANAWscrSDD_94hA7owLqSFInwYGRMBUgLwaLs161QjAcreEm1HBt_2wubKBl2oUlvwKibMAAuwFxA_AZdpwzRUQeAyuvkV2TwZNGB6Mo-sp_gM02XaMwB6ZPtbLRNfwlt8keJj5iLr98R534i9QHkBFEVs4KgxN" for ::1 at 2019-07-10 09:25:04 -0500
+Processing by SongsController#index as HTML
+  Parameters: {"code"=>"AQAbJOFzMn3bJUqEviY98gKTPVHbzs9Aa9PMv_RzTKPeWUO0HVRyYJonki9xzHMdIkKzEU-sq5LpFVSb4bNg5L_Vt-S7pxxiLvISV143q4jPoQyDAK1DnANAWscrSDD_94hA7owLqSFInwYGRMBUgLwaLs161QjAcreEm1HBt_2wubKBl2oUlvwKibMAAuwFxA_AZdpwzRUQeAyuvkV2TwZNGB6Mo-sp_gM02XaMwB6ZPtbLRNfwlt8keJj5iLr98R534i9QHkBFEVs4KgxN"}
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `artist' for #<SongsController:0x00007fc733dfa168>):
+  
+app/controllers/songs_controller.rb:5:in `index'
+Started GET "/callback?code=AQAbJOFzMn3bJUqEviY98gKTPVHbzs9Aa9PMv_RzTKPeWUO0HVRyYJonki9xzHMdIkKzEU-sq5LpFVSb4bNg5L_Vt-S7pxxiLvISV143q4jPoQyDAK1DnANAWscrSDD_94hA7owLqSFInwYGRMBUgLwaLs161QjAcreEm1HBt_2wubKBl2oUlvwKibMAAuwFxA_AZdpwzRUQeAyuvkV2TwZNGB6Mo-sp_gM02XaMwB6ZPtbLRNfwlt8keJj5iLr98R534i9QHkBFEVs4KgxN" for ::1 at 2019-07-10 09:25:28 -0500
+Processing by SongsController#index as HTML
+  Parameters: {"code"=>"AQAbJOFzMn3bJUqEviY98gKTPVHbzs9Aa9PMv_RzTKPeWUO0HVRyYJonki9xzHMdIkKzEU-sq5LpFVSb4bNg5L_Vt-S7pxxiLvISV143q4jPoQyDAK1DnANAWscrSDD_94hA7owLqSFInwYGRMBUgLwaLs161QjAcreEm1HBt_2wubKBl2oUlvwKibMAAuwFxA_AZdpwzRUQeAyuvkV2TwZNGB6Mo-sp_gM02XaMwB6ZPtbLRNfwlt8keJj5iLr98R534i9QHkBFEVs4KgxN"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-07-10 09:25:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/callback?code=AQAbJOFzMn3bJUqEviY98gKTPVHbzs9Aa9PMv_RzTKPeWUO0HVRyYJonki9xzHMdIkKzEU-sq5LpFVSb4bNg5L_Vt-S7pxxiLvISV143q4jPoQyDAK1DnANAWscrSDD_94hA7owLqSFInwYGRMBUgLwaLs161QjAcreEm1HBt_2wubKBl2oUlvwKibMAAuwFxA_AZdpwzRUQeAyuvkV2TwZNGB6Mo-sp_gM02XaMwB6ZPtbLRNfwlt8keJj5iLr98R534i9QHkBFEVs4KgxN" for ::1 at 2019-07-10 09:26:13 -0500
+Processing by SongsController#index as HTML
+  Parameters: {"code"=>"AQAbJOFzMn3bJUqEviY98gKTPVHbzs9Aa9PMv_RzTKPeWUO0HVRyYJonki9xzHMdIkKzEU-sq5LpFVSb4bNg5L_Vt-S7pxxiLvISV143q4jPoQyDAK1DnANAWscrSDD_94hA7owLqSFInwYGRMBUgLwaLs161QjAcreEm1HBt_2wubKBl2oUlvwKibMAAuwFxA_AZdpwzRUQeAyuvkV2TwZNGB6Mo-sp_gM02XaMwB6ZPtbLRNfwlt8keJj5iLr98R534i9QHkBFEVs4KgxN"}
+Completed 500 Internal Server Error in 104980ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/songs_controller.rb:5:in `index'
+Started GET "/callback?code=AQB_A_R0VIj5jFZ41Ee8rZC5FYCSiMuP9XaWrYeUAA3g2MxA63Ul5LAjtQvJfvpnm-50qk_EyISspbOJ0jXQLa58RQuOn2z6L8p-oOTT9Lgpa0j3OzcWgYMx4FLxWSXsPZINpQKz_J39m2gUmKL5DmvdUmkhNmzYXn9IDTJvSsu-i4fCoCTLZ1dSATiNaqzWPKz6fUf_-fqgwkxBowgmVxIe8WYe6IgHbJTt4wyH5f-EC3r0lnt0Eu95c7cKVgDGuUGMH_aYg1W-0WJzwnsf" for ::1 at 2019-07-10 09:32:05 -0500
+  
+SyntaxError (/Users/hanskrohn/Development/Projects-FlatIron-SoftwareDevelopment/dotify/server/app/controllers/songs_controller.rb:9: syntax error, unexpected tSTRING_DEND, expecting end
+...cation/x-www-form-urlencoded'}}
+...                              ^):
+  
+app/controllers/songs_controller.rb:9: syntax error, unexpected tSTRING_DEND, expecting end
+Started GET "/callback?code=AQCUv68LpfJPE0hMbeRFjFt6LyamoovCHGViRILNaQbdXB_-TarLY9tO_fBYDzdP10obpfeOG22bDkGW4x48bXT4hp_DoJIcmwusBEdXk0tXTEAsHqwmd_A4vraBzzZlmcVWvtdDNrURMOP7uBxT1PSRTiilFK1XzuJi2DJqz4htOfVXDL61sQtNOdMZRuXtApP98Jz5LqV2ZPkK9KeqtgLo_GBOsvDYMPQC1idANO4oTiFlpxm9D3NHWeduOMHkuUromVnaCEjxJmjFWzFh" for ::1 at 2019-07-10 09:32:25 -0500
+Processing by SongsController#index as HTML
+  Parameters: {"code"=>"AQCUv68LpfJPE0hMbeRFjFt6LyamoovCHGViRILNaQbdXB_-TarLY9tO_fBYDzdP10obpfeOG22bDkGW4x48bXT4hp_DoJIcmwusBEdXk0tXTEAsHqwmd_A4vraBzzZlmcVWvtdDNrURMOP7uBxT1PSRTiilFK1XzuJi2DJqz4htOfVXDL61sQtNOdMZRuXtApP98Jz5LqV2ZPkK9KeqtgLo_GBOsvDYMPQC1idANO4oTiFlpxm9D3NHWeduOMHkuUromVnaCEjxJmjFWzFh"}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- http/cookie_jar):
+  
+app/controllers/songs_controller.rb:5:in `index'
+Started GET "/callback?code=AQBYpBqFAZU1Ni9CUCimvaM_KS2fQ8k-hhbWcUju1LsGlvVBsEg6iV1Z6QNmt_pJ7XHJeTbprBBRvRvpSkGJ01PV5zfaUGkAovP0O9SditfUZ-g38zMWfzZjbaXacZ4lHS7Jww7KeY7q9cyTQmWFkN5Baae3DxSg72IA_E6yEmCEG-62YmPpu0Jgq8SECbmQDMH9pZOjSrOR1DBy3pxQFJfYUvs-tDloTVJEfUNZAXr1JlV2TTwMlxE4BdEIRNXP5nDk_NqHnqN-2kgs0VGI" for ::1 at 2019-07-10 09:36:03 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/hanskrohn/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SongsController#index as HTML
+  Parameters: {"code"=>"AQBYpBqFAZU1Ni9CUCimvaM_KS2fQ8k-hhbWcUju1LsGlvVBsEg6iV1Z6QNmt_pJ7XHJeTbprBBRvRvpSkGJ01PV5zfaUGkAovP0O9SditfUZ-g38zMWfzZjbaXacZ4lHS7Jww7KeY7q9cyTQmWFkN5Baae3DxSg72IA_E6yEmCEG-62YmPpu0Jgq8SECbmQDMH9pZOjSrOR1DBy3pxQFJfYUvs-tDloTVJEfUNZAXr1JlV2TTwMlxE4BdEIRNXP5nDk_NqHnqN-2kgs0VGI"}
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.0ms)
+
+
+  
+RestClient::BadRequest (400 Bad Request):
+  
+app/controllers/songs_controller.rb:5:in `index'
+Started GET "/callback?code=AQCjXaLqtu7eRhRCk0BI_v-QG_65XTxH_0iR5ZwStLnnIcBYDTeQv3um2ry4r_-XD-PStMobWGvQJoH6SMVbbXzZZ-kHF8yEqXL5E-q1RIq1G3e_5orlZc5sXGseStY4iY34X-zz1QCJTMCKn5jmksgisrbM0Oza_aFOtfORHY5zEexTtjFkqyld4wsnvL7Ouyc38oVdRxDlndZATDZHwCtGnrpOR5zen385r1h0J8EMAFJ6_Q8fsvIvHyT4qgdf31i8uZV8cJIDTkyYhVwr" for ::1 at 2019-07-10 09:37:38 -0500
+  
+SyntaxError (/Users/hanskrohn/Development/Projects-FlatIron-SoftwareDevelopment/dotify/server/app/controllers/songs_controller.rb:10: syntax error, unexpected rescue, expecting '}'
+            rescue e 
+            ^~~~~~
+/Users/hanskrohn/Development/Projects-FlatIron-SoftwareDevelopment/dotify/server/app/controllers/songs_controller.rb:13: syntax error, unexpected ':', expecting end
+            	client_secret: '190d444411b04417816ac4550e9...
+            	             ^
+/Users/hanskrohn/Development/Projects-FlatIron-SoftwareDevelopment/dotify/server/app/controllers/songs_controller.rb:13: syntax error, unexpected '}', expecting end
+...d444411b04417816ac4550e9115c4'}, {'Content-Type': 'applicati...
+...                              ^):
+  
+app/controllers/songs_controller.rb:10: syntax error, unexpected rescue, expecting '}'
+app/controllers/songs_controller.rb:13: syntax error, unexpected ':', expecting end
+app/controllers/songs_controller.rb:13: syntax error, unexpected '}', expecting end
+Started GET "/callback?code=AQDksD-F1vFHu23lZ9Y_tJ2DAS-o9_UBdQRq_UfCD_mABw4eo5u0Sxx1-d5v2IyYvgFEgL3W3OAisnMcVkDyCZGXJtdHrTR0PE4IsZWoIw5Mlvj1cJB8x3GPvLDJCIz-kLbYzXrptjnOeqxt1mweSC2rngbVQrBYwGTp0C4sGwAGzEY7gV8Fg4qqGgxXMZLBbkm-HtGLlAZrGYrqKzW6MXvJe7PDlmYbR5YrfHJ4e77EWsNhM-E5Ij4MdhLN9jyqC4-W4DzmBhH0m-buDwWW" for ::1 at 2019-07-10 09:38:11 -0500
+Processing by SongsController#index as HTML
+  Parameters: {"code"=>"AQDksD-F1vFHu23lZ9Y_tJ2DAS-o9_UBdQRq_UfCD_mABw4eo5u0Sxx1-d5v2IyYvgFEgL3W3OAisnMcVkDyCZGXJtdHrTR0PE4IsZWoIw5Mlvj1cJB8x3GPvLDJCIz-kLbYzXrptjnOeqxt1mweSC2rngbVQrBYwGTp0C4sGwAGzEY7gV8Fg4qqGgxXMZLBbkm-HtGLlAZrGYrqKzW6MXvJe7PDlmYbR5YrfHJ4e77EWsNhM-E5Ij4MdhLN9jyqC4-W4DzmBhH0m-buDwWW"}
+Completed 500 Internal Server Error in 338ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `e' for #<SongsController:0x00007fbe853443b0>):
+  
+app/controllers/songs_controller.rb:11:in `rescue in index'
+app/controllers/songs_controller.rb:5:in `index'
+Started GET "/callback?code=AQCIMlQdUjKcsdq_eSGze1INH25Jk-cr33wS6RiS2fpTepNacBsUmxuu-sCuKDLx0m-ivU0t87JWKdhwA5X1yQZes78KscBm0Jmbsvwx5SX28VP3ooONazmGBlycmwGr-5sXLwVmEYbPMBA6XlbPgoSVYcIM8XeXF4zM5beKOKYluTHvQisazF1Cm3WvmYuKyKq3jHBXlWReFlCgu9VOPUqp_8c-yN3RUI9_u6bS2o5GxJhWj3cL4_ePbr1FwsTN1TyoDzUqYj9lUELnkakx" for ::1 at 2019-07-10 09:39:04 -0500
+Processing by SongsController#index as HTML
+  Parameters: {"code"=>"AQCIMlQdUjKcsdq_eSGze1INH25Jk-cr33wS6RiS2fpTepNacBsUmxuu-sCuKDLx0m-ivU0t87JWKdhwA5X1yQZes78KscBm0Jmbsvwx5SX28VP3ooONazmGBlycmwGr-5sXLwVmEYbPMBA6XlbPgoSVYcIM8XeXF4zM5beKOKYluTHvQisazF1Cm3WvmYuKyKq3jHBXlWReFlCgu9VOPUqp_8c-yN3RUI9_u6bS2o5GxJhWj3cL4_ePbr1FwsTN1TyoDzUqYj9lUELnkakx"}
+Completed 500 Internal Server Error in 226601ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/songs_controller.rb:14:in `index'
+Started GET "/callback?code=AQBGfbbiQD728qygX6Row0w5B8DYWhcJMnShLarStEcIoUlb2fgZu7pv7ogSHILQq5y8Gy_LuRnNTlaZ1aWhCcAD22mCp8zslOlTcqOeiehN0gFIJSrP0zEJ2-iLFsvzHM4MnnWm730MLKjlminknGHTzzqCjicaCczgaXr5iBRpFrNu4qcKodxdm9uzlyxkd5X6BxIlqRQL4fGlAIRquNuVipqrjfxzOzffDjSRoBHlJbIkPnjrKY0CPDpEfYC8H5IblrGRybDs9VtIFKJY" for ::1 at 2019-07-10 09:42:51 -0500
+Processing by SongsController#index as HTML
+  Parameters: {"code"=>"AQBGfbbiQD728qygX6Row0w5B8DYWhcJMnShLarStEcIoUlb2fgZu7pv7ogSHILQq5y8Gy_LuRnNTlaZ1aWhCcAD22mCp8zslOlTcqOeiehN0gFIJSrP0zEJ2-iLFsvzHM4MnnWm730MLKjlminknGHTzzqCjicaCczgaXr5iBRpFrNu4qcKodxdm9uzlyxkd5X6BxIlqRQL4fGlAIRquNuVipqrjfxzOzffDjSRoBHlJbIkPnjrKY0CPDpEfYC8H5IblrGRybDs9VtIFKJY"}
+Completed 500 Internal Server Error in 2421ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/songs_controller.rb:14:in `index'
+Started GET "/callback?code=AQBg05uCsoNtYd5zKyxQS8Ir_Kr6Y4IdTNUJi8FY0ASIvaJyNg4Stnpl3b3YzrVs2VZqBHfo6bj_s-vj1z5a5CTrkgN9apICNECadWwTHYI0bs5dtk7MNplbwYPBSWLLVFkUj_3d8lTQJvVmSH6v1HaxCzyYoBk4x148G8bKB8VRuEhfcCH4Cu-_azG5SI6nMRndwb1r_TbUgEH13Tlsoave09amfbGNwW64d21H_xHQzS-hu7-uL77_JI1pJIXChY-0o2DuMWzy65EhZX1-" for ::1 at 2019-07-10 09:42:59 -0500
+Processing by SongsController#index as HTML
+  Parameters: {"code"=>"AQBg05uCsoNtYd5zKyxQS8Ir_Kr6Y4IdTNUJi8FY0ASIvaJyNg4Stnpl3b3YzrVs2VZqBHfo6bj_s-vj1z5a5CTrkgN9apICNECadWwTHYI0bs5dtk7MNplbwYPBSWLLVFkUj_3d8lTQJvVmSH6v1HaxCzyYoBk4x148G8bKB8VRuEhfcCH4Cu-_azG5SI6nMRndwb1r_TbUgEH13Tlsoave09amfbGNwW64d21H_xHQzS-hu7-uL77_JI1pJIXChY-0o2DuMWzy65EhZX1-"}
+Completed 500 Internal Server Error in 365847ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/songs_controller.rb:15:in `index'
+Started GET "/callback?code=AQDWjtJx4LTt0PKfrRS9VKKlN_Gke9CQapzLClgAcmNo-rb7yA7K6FsHTrjhL3H3pRFKxCNiQMwFuI00ss80JlSNnTs_hpYLGI9ux0dw4ldhm2HSnlk7BLGVmgKkg8S-9eFcU8WMdl-cpMcUMskkzDEZoARiZWA0LQzk-mhsiKER2T0ANEuhJ1ilnr3Jw9h2usNT-nbS8RUA8suTjKLUf_BW9DWzJTF0oulHbIX7IQMbjvcixUB-S4UhwJlq1dkz4I0_cj3T8Gop1tWTe03r" for ::1 at 2019-07-10 09:49:12 -0500
+Processing by SongsController#index as HTML
+  Parameters: {"code"=>"AQDWjtJx4LTt0PKfrRS9VKKlN_Gke9CQapzLClgAcmNo-rb7yA7K6FsHTrjhL3H3pRFKxCNiQMwFuI00ss80JlSNnTs_hpYLGI9ux0dw4ldhm2HSnlk7BLGVmgKkg8S-9eFcU8WMdl-cpMcUMskkzDEZoARiZWA0LQzk-mhsiKER2T0ANEuhJ1ilnr3Jw9h2usNT-nbS8RUA8suTjKLUf_BW9DWzJTF0oulHbIX7IQMbjvcixUB-S4UhwJlq1dkz4I0_cj3T8Gop1tWTe03r"}
+Redirected to http://10.185.4.208:8080/#access_token=BQAUmyWD7C7IxfLM-DDAOAGr8Sc1XNaO084YorQmpt_Avb1xCzcme5DLqDHBkiydDQpgYI_r3kTsCVkKky5ZDYlsMY18S4-4bNr9IZXb4QeQaV5qnygvI3QAb9hNYlJ88D-C9NilO5lZUO8lDvt3DFpluz_gcCYnnp59_ZyYH4SrALcg4ed8eqE&refresh_token=AQCgrWlZ9p9bptk5nOk-zcBs4ucAcihcGUqnAHKW1QO0PH12iH-0s7_7qdnm4pSHMutieKT_JSdcF9hvZTVK0KceV8f42YWR7-yFrii8AdWgxT6zb__AHs1Mmd9Xg-k3cS6Ddw
+Completed 302 Found in 272ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?code=AQBCCelFKuci0xzIowCzakmm43NDElfNMoC5pTTZ1gQis1PrSSzjegMZsmVzRsNX4_9uRYYiuwZsSJ7wai1I77MB9eWr41ylFsCeocqLr7MrwDlCEEkzTOB-qKGnPCjzykO67M47oFSoabucNCoHnBTNwBjGZP2qMGir9WN2n1nXvHCw_HGWRp7LCOSSiNL2KrpE-lgVPtO9ulUvbcXbyt755U0MXTNBFZupnyruASpTln8hYlQpfmyuuPJk99IJaX5r8qlqPrSEJIaqXZmc" for ::1 at 2019-07-10 09:51:15 -0500
+Processing by SongsController#index as HTML
+  Parameters: {"code"=>"AQBCCelFKuci0xzIowCzakmm43NDElfNMoC5pTTZ1gQis1PrSSzjegMZsmVzRsNX4_9uRYYiuwZsSJ7wai1I77MB9eWr41ylFsCeocqLr7MrwDlCEEkzTOB-qKGnPCjzykO67M47oFSoabucNCoHnBTNwBjGZP2qMGir9WN2n1nXvHCw_HGWRp7LCOSSiNL2KrpE-lgVPtO9ulUvbcXbyt755U0MXTNBFZupnyruASpTln8hYlQpfmyuuPJk99IJaX5r8qlqPrSEJIaqXZmc"}
+Redirected to http://10.185.4.208:8080/#access_token=BQBJPpfTw2nh3yx8XGNGABG_w0Y71k_mA7OQiNuB3EFhelir9kxQSIn-QqNj-DwqE9LVa5uNRrj1L8MJ_efM9nZx3RzfGZS7ubiXDdD5WuZwlgBjy6ELojGPp87HPJ_oxmliqum0ha5d9DCv11aCwgDxTBxASLmg8meVQqcfdAoOUMWncbLd-Vg&refresh_token=AQB0t5JG9UqmjXpldHc5cv0dxIx-W3ienFp8e8LH_P1M_3KSexmmvyfu10KCo-_u-oFl34E0K3MZUxkp-JatE6M0mAQtZo26V1feVK457usocuMiwYQiLYfAJn-lQBQERkp1bw
+Completed 302 Found in 585ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?code=AQA4JL0qxY9UX-2rEejt_dlT1wG7HsgwSAcd3CwL4ptsFMJhWCpEpaT_O4bxiXG4ga-NztV8O-39imdTu-Vm3cdv9Dyi8ty_79-ZOETzBOt7Vyo3PafpTTPX_DXuvrcxwyLQM1Cd5-4VprG-f61fKOsG2MRaV6ZprwRSrAreEgNW5kym-kNg9vn6fJR_R3d0ILbtEkwQ_kQ8FWTJcmWjSAepUOMJqsoK-rDinTp6Jb__9qt7NMzBoJ68X2piRp36WqgFJyzjZO_6tWw2jbMM" for ::1 at 2019-07-10 09:51:19 -0500
+Processing by SongsController#index as HTML
+  Parameters: {"code"=>"AQA4JL0qxY9UX-2rEejt_dlT1wG7HsgwSAcd3CwL4ptsFMJhWCpEpaT_O4bxiXG4ga-NztV8O-39imdTu-Vm3cdv9Dyi8ty_79-ZOETzBOt7Vyo3PafpTTPX_DXuvrcxwyLQM1Cd5-4VprG-f61fKOsG2MRaV6ZprwRSrAreEgNW5kym-kNg9vn6fJR_R3d0ILbtEkwQ_kQ8FWTJcmWjSAepUOMJqsoK-rDinTp6Jb__9qt7NMzBoJ68X2piRp36WqgFJyzjZO_6tWw2jbMM"}
+Redirected to http://10.185.4.208:8080/#access_token=BQBKsVtGu3ZA8TblY85rStX91NH2NdcvDCTPuKgDXWxJWRBJm9PQMX2nPnSUyZpNEyZhfKhCqrk0aHLC2KhK0IHtqh9F7Jl8cEyvSD-GCQIA7jFZyX-b7UyKI2089Zi20H2svnrYTZJQbNSyphFx0rOxIE2y7GbuSXs9yg202F4XKgyQgz8Rt00&refresh_token=AQDM4ljKvZ2txtQxDGkoe3cf2I6thkZWgnZEDKzupIHEv_xoznzwod783w37l6RK2rscSXjD40_pfKPSRPDsUeKatuKesGSqGGqUyDpthqWEqpUNvgx56p-GcdRaYPQT6xotgA
+Completed 302 Found in 232ms (ActiveRecord: 0.0ms)
+
+
