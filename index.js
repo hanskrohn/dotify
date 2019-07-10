@@ -1,3 +1,5 @@
+//When we first load page window location will be empty. This will cause it to hit the if statement and get a code and reload this page
+//Once page load we take away the #, split at the & and create an object ({}) with just the access_token =  token
 const hash = window.location.hash
                 .substring(1)
                 .split('&')
@@ -16,7 +18,7 @@ window.location.hash = '';
 
 // Set token
 
-  let  _token = hash.access_token;
+let  _token = hash.access_token;
 
 
 const authEndpoint = 'https://accounts.spotify.com/authorize';
@@ -34,104 +36,61 @@ const scopes = [
 if (!_token) {
   window.location = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}&response_type=code`;
 }
-clientSecret = '190d444411b04417816ac4550e9115c4'
-id = ''
-
-// _token = 'BQBx-FnjwpBSL2YZZ8FuI06IXTSFEXvwtgH_JXXVgDpFHy7gjAMxbr1ZEnXZacYRwnyggKLE1h0ckDBD8h6AWyXhgoJCgiNlPZQDvO1838W56n5VHXomg3E65R6TOHbOa2kBJQdh3UVLXYKa9Cm8wt0IgmH_M2RtDlDrObB8yoBOwx5rcKA5C--UeIsTTF4sN0wMx0PMXK_h6wOzHH2F_8yyJTFOkIO3IoNLqKfN5jwzg4RW5PC5PujToHm6UYtmH3ta4jPVv-0ZExRZEw7HRLXIpolLvDfejfY'
-
+//if you search by artist display all albums he appears in
 fetch("https://api.spotify.com/v1/search?q=kanye&type=artist" , {
 method: "GET",
 headers: {
     'Authorization': "Bearer " + _token     
 }
-//  window.location.reload()
 })
 .then(response => response.json())
 .then((beats) => { 
    
-  
-  console.log(beats)
+  // everything related to the artist
+  //this displays all the artists
+  console.log(beats, "this is all the artists!")
     
-//     const everything = beats
-//     let itemsArray=[]
-
-//     for(let i = 0; i< beats.artists.items.length;i++){
-//       itemsArray.push(beats.artists.items[i])
-//     }
-//     console.log(itemsArray)
 })
+//search by album
+//this dsilpays the chosen artist albums
+//search albums with artist id
+//'https://api.spotify.com/v1/artists/id/albums
+//send the album id to the songs fetch
+fetch('https://api.spotify.com/v1/artists/5K4W6rqBFWDnAN6FQUkS6x/albums',{
+  method: "GET",
+  headers: {
+      'Authorization': "Bearer " + _token     
+  }
+})
+.then(response => response.json())
+.then((beats) => { console.log(beats, "this is all the albusms from selected artist")})
+
+//this gives us all the tracks in an album
+fetch('https://api.spotify.com/v1/albums/6pwuKxMUkNg673KETsXPUV/tracks',{
+  method: "GET",
+  headers: {
+      'Authorization': "Bearer " + _token     
+  }
+})
+.then(response => response.json())
+.then((beats) => { console.log(beats, "this the selected album")})
+
+//
+
+fetch('https://api.spotify.com/v1/tracks/3aUFrxO1B8EW63QchEl3wX',{
+  method: "GET",
+  headers: {
+      'Authorization': "Bearer " + _token     
+  }
+})
+.then(response => response.json())
+.then((beats) => console.log(beats,"this is a single song in the album"))
+
+//song fetch
+//'https://api.spotify.com/v1/album/{id}/tracks
+//https://api.spotify.com/v1/tracks/id
 
 
-    // fetch(beats,{
-    //     method: "GET",
-    //     headers: {
-    //         'Authorization': "Bearer " + _token     
-    //     }
-    //     })
-    
-    // .then(res=> res.json())
-    // .then(data => console.log(data))
-    // fetch('http://localhost:3000',{
-    //     method: "POST",
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //         'Accept': 'application/json'
-    //     },
-    //     body: JSON.stringify({
-
-    //     })
-    // })
-// })
-// document.addEventListener('DOMContentLoaded',(e)=>{
-//     e.preventDefault()
-//     new SearchBox
-// })
-// class SearchBox{
-//     constructor(){
-//         this.seachBox = document.querySelector('.text-field')
-//         this.submitBtn = document.querySelector('.submit')
-//         this.submitBtn.addEventListener('click',(e)=>{
-//             e.preventDefault()
-//             window.open("localhost:3000//controller/show/"+this.seachBox.value)
-//         })
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-// code that josh worked with us on
-// fetch('https://accounts.spotify.com/api/token',{
-// method: 'POST',
-// headers:{
-// 	'Content-Type': 'application/x-www-form-urlencoded'
-// },
-// body: JSON_to_URLEncoded({
-// 	redirect_uri: 'http://10.185.0.160:8080',
-// 	grant_type: 'authorization_code',
-// 	code:'AQCZ-bixGawg5UEDoDhgkeONu9vROLN1lFfItoyT3OI3bHiESEcnDalmRSDJ1hjeqlojSc9uxWxB7cXKZM4ka2uqxXOPWuIDqLtKtnNem87j7TvMm_b1CqVSbjyB48pvUCsRpot5c1vbZ8YPTxFfb_kIPR7H0xwuWvG5F5TaJHohurGKe2N3lGm9-6Z-blq5xNf7lNJMUqqcSoeKOtvF0PSBhnmSFhWKdLMPfD4M0X0odLL85g_60NtV79y-kk3SjGPuRy9c8Izv',
-// 	client_id: '55c12b17da23491c82c85edd1c942d61',
-// 	client_secret: '190d444411b04417816ac4550e9115c4'
-// })
-// })
-
-// function JSON_to_URLEncoded(element,key,list){
-//   var list = list || [];
-//   if(typeof(element)=='object'){
-//     for (var idx in element)
-//       JSON_to_URLEncoded(element[idx],key?key+'['+idx+']':idx,list);
-//   } else {
-//     list.push(key+'='+encodeURIComponent(element));
-//   }
-//   return list.join('&');
 
 
 // http-server dotify .
