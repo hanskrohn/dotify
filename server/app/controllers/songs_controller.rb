@@ -1,7 +1,16 @@
 class SongsController < ApplicationController
     def index
         # @artists = RSpotify::Artist.search(input)
-
+        
+        
+    end
+    def show
+        input = params[:input]
+        # @artists = RSpotify::Artist.search(input)
+        # song = Song.find(params[:id])
+        render json: @artist
+    end
+    def refresh
         begin
             #Rest client search. This asks spotify to give us an access_token and a refresh_token
             #This where the param requirements they asked for (available in there documentation)
@@ -21,12 +30,6 @@ class SongsController < ApplicationController
         refresh_token = result["refresh_token"]
         #From here we reply only using the access_token as the refresh_token is not required nir ever used in the front end
         redirect_to "http://10.185.4.208:8080/#access_token=#{access_token}" #&refresh_token=#{refresh_token}"
-    end
-    def show
-        input = params[:input]
-        # @artists = RSpotify::Artist.search(input)
-        # song = Song.find(params[:id])
-        render json: @artist
     end
 
 
