@@ -1,55 +1,17 @@
-
-//     fetch('http://localhost:3000/songs/1')
-//     .then(function(response){
-//         return response.json()
-//     })
-//     .then(function(result){
-//         console.log(result)
-//     })
-
-    
-
-// fetch("https://api.spotify.com/v1/tracks/" + id, {
-//     method: "GET",
-//     headers: {
-//         Authorization: "Bearer " + token     
-//     }
-//     })
-//     .then(response => response.json())
-//     .then((beats) => { console.log(beats)
-//     })
-//     fetch('https://accounts.spotify.com/authorize', {
-//         method: 'GET',
-//         headers:{
-           
-//         }
-//     })
-//     .then(res => res.json())
-//     .then(s=>console.log(s))
-
-//     fetch('https://accounts.spotify.com/api/token', {
-//         method: 'POST',
-//         headers: {
-//             'Authorization': 'Basic '
-//         },
-//         body: JSON.stringify({
-//             grant_type: 'refresh_token',
-//             refresh_token: token
-//         })
-//     })
-//     // Get the hash of the url
 const hash = window.location.hash
-.substring(1)
-.split('&')
-.reduce(function (initial, item) {
-  if (item) {
-    var parts = item.split('=');
-    initial[parts[0]] = decodeURIComponent(parts[1]);
-    
-  }
-  
-  return initial;
-}, {});
+                .substring(1)
+                .split('&')
+                .reduce(function (initial, item) {
+                  if (item) {
+                    const [ key, value ] = item.split('=')
+                    // Same as: 
+                    // const keyAndValue = item.split('=');
+                    // const key = keyAndValue[0]
+                    // const value = keyAndValue[1]
+                    initial[key] = decodeURIComponent(value);
+                  }
+                  return initial;
+                }, {});
 window.location.hash = '';
 
 // Set token
@@ -70,7 +32,7 @@ const scopes = [
 
 // If there is no token, redirect to Spotify authorization
 if (!_token) {
-  if(!window.location.href.includes('code')) window.location = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}&response_type=code`;
+  window.location = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}&response_type=code`;
 }
 clientSecret = '190d444411b04417816ac4550e9115c4'
 id = ''

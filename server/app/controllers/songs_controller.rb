@@ -1,7 +1,6 @@
 class SongsController < ApplicationController
     def index
         # @artists = RSpotify::Artist.search(input)
-        params[:code]
         begin
             response = RestClient.post 'https://accounts.spotify.com/api/token', {redirect_uri: 'http://localhost:3000/callback',
                     grant_type: 'authorization_code',
@@ -14,7 +13,7 @@ class SongsController < ApplicationController
         result = JSON.parse(response.body)
         access_token =result["access_token"]
         refresh_token = result["refresh_token"]
-        redirect_to "http://10.185.4.208:8080/#access_token=#{access_token}&refresh_token=#{refresh_token}"
+        redirect_to "http://10.185.4.208:8080/#access_token=#{access_token}" #&refresh_token=#{refresh_token}"
     end
     def show
         input = params[:input]
