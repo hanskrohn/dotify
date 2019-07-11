@@ -10,12 +10,14 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
+  
 }
 .card {
   margin-right: 100px;
+  background-color: rgba(0,0,0,0.3);
 }
 .card-title {
-  color: green;
+  color: white;
 }
 .g-links {
   opacity: 1;
@@ -27,7 +29,7 @@
 .jumbotron {
   background-image: url("/public/scepa1.jpg");
   background-position: center;
-  opacity: 0.65;
+  opacity: 0.8;
   /* background-size: 100% 100%; */
 }
 
