@@ -1,0 +1,29 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+.card-img-top {
+    background-size: cover;
+    min-height: 180px;
+    background-position: center;
+  }
+  
+  .card-group {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
+  .card{
+      margin-right: 100px;
+  }
+  .card-title{
+      color: green;
+  }
+  .g-links{
+    opacity: 1.0;
+    font-size: 120%;
+    margin-right: 75px;
+    color: black;
+}
+.show {
+    background-image: url("./server/public/back.jpg");
+
+}
