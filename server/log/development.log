@@ -6409,3 +6409,12 @@ Redirected to http://10.185.4.208:8080/#access_token=BQBisiZqq_Bd0PRKD5aCiXyrf5f
 Completed 302 Found in 200ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/callback?code=AQAH2qX9K_FnRSGRRlBpG8tTTMjFWcQHiVc8ZfFxKtIJZG43xjLyYnyj1a9SWDR827_2p3dlhc8em2JvptPYMELH370saAqsalubkVXAGHOjFJsOq1D1fkE4yGDI46OlulWd0O8tgmbOSPH766aJLuT5Ctcb4V3oEfnpTf_cYfLMEA7x8QQhuqJJPXPjNcjYFYjjIpUjq0NTaGZzjv-PRfQH_HgPgL9LzeQi3EUvR1AhymQ4gLtjYnRSqVEuxEqm27XVzWNqzPZTgaUrbgLj" for ::1 at 2019-07-11 09:19:41 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/hanskrohn/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ApplicationController#refresh as HTML
+  Parameters: {"code"=>"AQAH2qX9K_FnRSGRRlBpG8tTTMjFWcQHiVc8ZfFxKtIJZG43xjLyYnyj1a9SWDR827_2p3dlhc8em2JvptPYMELH370saAqsalubkVXAGHOjFJsOq1D1fkE4yGDI46OlulWd0O8tgmbOSPH766aJLuT5Ctcb4V3oEfnpTf_cYfLMEA7x8QQhuqJJPXPjNcjYFYjjIpUjq0NTaGZzjv-PRfQH_HgPgL9LzeQi3EUvR1AhymQ4gLtjYnRSqVEuxEqm27XVzWNqzPZTgaUrbgLj"}
+Redirected to http://10.185.1.54:8080/#access_token=BQCwX95LYCpfYgDrMO3xiPfT-1W61EavlDSQnKrbpC2h7JHAGILXlcB3bk8HhAo_mwql2XeUuDoQTe-yD7snL_aoIZfRUNqZdzARe5loyxCCvHDLjIPtDxJkTt2CLry7VAgexfGm_LwF4DxJNQODGRbBcXYQbnQpaMjRP90Pa2ZUBMQFAPBwCwg
+Completed 302 Found in 376ms (ActiveRecord: 0.0ms)
+
+
