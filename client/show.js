@@ -1,14 +1,18 @@
 class Show{
 
     constructor(){
-        let show = document.querySelector('.show')
+        //truncating 
+        this.show = document.querySelector('.show')
         this.searchTextBox = document.querySelector('.search-box')
-
         this.submitBtn = document.querySelector('.submitBtn')
+        this.cardGroup =  document.createElement('div')
+        this.cardGroup.className = "card-group"
+
         this.submitBtn.addEventListener('click', (e) => {
             e.preventDefault()
-            show.innerHTML = ""
-            fetch(`https://api.spotify.com/v1/search?q=${this.searchTextBox.value}&type=artist` , {
+          
+            this.show.innerHTML = ""
+            fetch(`https://api.spotify.com/v1/search?q=name:${this.searchTextBox.value}&type=track` , {
             method: "GET",
             headers: {
                 'Authorization': "Bearer " + _token     
@@ -16,80 +20,91 @@ class Show{
             })
             .then(response => response.json())
             .then((beats) => { 
-            let itemsArray = []
-            console.log(beats)
-            for(let i=0; i<beats.artists.items.length; i++) {
-                itemsArray.push(beats.artists.items[i])
-            }
-            this.render(itemsArray)
+         
+                    console.log(beats.tracks.items, "ugabuga2!")
+                    new Artist(beats.tracks.items)
+                    new Album(beats.tracks.items)
+                    new TrackEvent(beats.tracks.items)
+            
+            // this.renderArtist(itemsArray)
             })
         })
-
     }
-            render(array) {
-                console.log(array)
-                let show = document.querySelector('.show')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    renderArtist(array) {
+        console.log(array)
+        
+        for(let i = 0; i <array.length;i++){
+            let div = document.createElement('div')
+            div.className = "card"
+
+            let cardImgTop = document.createElement('img')
+            cardImgTop.className = "card-img-top"
+
+            if(array[i].images.length!=0){
+
+                cardImgTop.src = array[i].images[0].url
                 
-                let cardGroup =  document.createElement('div')
-                cardGroup.className = "card-group"
-                for(let i = 0; i <array.length;i++){
-                    let div = document.createElement('div')
-                    div.className = "card"
-
-                    let cardImgTop = document.createElement('img')
-                    cardImgTop.className = "card-img-top"
-
-                    if(array[i].images.length!=0){
-
-                        cardImgTop.src = array[i].images[0].url
-                        
-                        
-                    }
-                    else{
-                        cardImgTop.src = '/server/public/static-img.jpg'
-                        
-                    }
-
-                    let cardDiv = document.createElement('div')
-                    cardDiv.className = 'card-body'
-
-                    let h5 = document.createElement('h5')
-                    h5.className = 'card-title'
-                    h5.innerText = array[i].name
-                    
                 
-
-                    cardDiv.append(h5)
-                    div.append(cardImgTop, cardDiv)
-                    cardGroup.append(div)
-
-                    div.addEventListener('click', (e) => {
-                        e.preventDefault()
-                        show.innerHTML = ""
-                        fetch(`https://api.spotify.com/v1/artists/${array[i].id}/albums` , {
-                            method: "GET",
-                            headers: {
-                                'Authorization': "Bearer " + _token     
-                            }
-                            })
-                            .then(response => response.json())
-                            .then((albumArray) => { 
-                                console.log(albumArray, "this is albumArray ")
-                            this.renderAlbums(albumArray)
-                            })
-                        })
-
-                    
-                    
-                }
-            show.append(cardGroup)
             }
+            else{
+                cardImgTop.src = 'public/static-img.jpg'
+                
+            }
+
+            let cardDiv = document.createElement('div')
+            cardDiv.className = 'card-body'
+
+            let h5 = document.createElement('h5')
+            h5.className = 'card-title'
+            h5.innerText = array[i].name
+            
+        
+
+            cardDiv.append(h5)
+            div.append(cardImgTop, cardDiv)
+            this.cardGroup.append(div)
+
+            div.addEventListener('click', (e) => {
+                e.preventDefault()
+                this.show.innerHTML = ""
+                fetch(`https://api.spotify.com/v1/artists/${array[i].id}/albums` , {
+                    method: "GET",
+                    headers: {
+                        'Authorization': "Bearer " + _token     
+                    }
+                    })
+                    .then(response => response.json())
+                    .then((albumObj) => { 
+                        console.log(albumObj, "this is albumObj ")
+                        new Album(albumObj)
+                    })
+                })
+
+            
+            
+        }
+    this.show.append(this.cardGroup)
+    }
             renderAlbums(array){
                 
-                let show = document.querySelector('.show')
                 
-                let cardGroup =  document.createElement('div')
-                cardGroup.className = "card-group"
                 for(let i = 0; i <array.items.length;i++){
                     let div = document.createElement('div')
                     div.className = "card"
@@ -104,7 +119,7 @@ class Show{
                         
                     }
                     else{
-                        cardImgTop.src = '/server/public/static-img.jpg'
+                        cardImgTop.src = 'public/static-img.jpg'
                         
                     }
 
@@ -119,7 +134,7 @@ class Show{
 
                     cardDiv.append(h5)
                     div.append(cardImgTop, cardDiv)
-                    cardGroup.append(div)
+                    this.cardGroup.append(div)
 
                     div.addEventListener('click', (e) => {
                         e.preventDefault()
@@ -141,7 +156,7 @@ class Show{
                         })
 
             }
-            show.append(cardGroup)
+            this.show.append(cardGroup)
         }
         renderTracks(array){
                 
@@ -157,7 +172,7 @@ class Show{
                 cardImgTop.className = "card-img-top"
 
                 
-                    cardImgTop.src = '/server/public/disc.jpg'
+                cardImgTop.src = 'public/disc.jpg'
                     
                 
 
@@ -187,10 +202,12 @@ class Show{
             //     <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
             //   </button>
 
-                cardDiv.append(h5, h7, button)
+                cardDiv.append(h5, h7)
                 div.append(cardImgTop, cardDiv)
                 cardGroup.append(div)
             }
             show.append(cardGroup)
         }
 }
+
+
