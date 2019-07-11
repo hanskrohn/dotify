@@ -20,6 +20,6 @@ class ApplicationController < ActionController::API
         access_token =result["access_token"]
         refresh_token = result["refresh_token"]
         #From here we reply only using the access_token as the refresh_token is not required nir ever used in the front end
-        redirect_to "http://10.185.4.208:8080/#access_token=#{access_token}" #&refresh_token=#{refresh_token}"
+        redirect_to "http://10.185.1.54:8080/#access_token=#{access_token}" #&refresh_token=#{refresh_token}"
     end
 end
