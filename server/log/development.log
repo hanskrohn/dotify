@@ -7542,3 +7542,45 @@ Redirected to http://localhost:8080/#access_token=BQBZobKHS3ifaSYEzNgnomMBeh3rLE
 Completed 302 Found in 189ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/callback?code=AQAdsXWSJK2IKh9M9lqALDhyW4yMmwBZTvmVZ4HeCIyYEVPWnaSehvOU-rxGC2ZvMfeqn9fD7dkzTqhjfXHar8Z1hYbvilvK7TtnqJbgDtl4PmHrbFUKm7HxKdTK8b6wxXD5KKt3SPCpkENPn4mlW0qp--nKJ8M2nRmla0HTuzMiV0G2B1FV774W-aovOePUe2-zd1h0LPv1xJSrfDsx-xZHNJCSqbItz1EvSggV2wXeX2KohggtWjDPKFD9P0FMix3gvjlteg6NkphbwERW" for ::1 at 2019-07-11 15:24:23 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ApplicationController#refresh as HTML
+  Parameters: {"code"=>"AQAdsXWSJK2IKh9M9lqALDhyW4yMmwBZTvmVZ4HeCIyYEVPWnaSehvOU-rxGC2ZvMfeqn9fD7dkzTqhjfXHar8Z1hYbvilvK7TtnqJbgDtl4PmHrbFUKm7HxKdTK8b6wxXD5KKt3SPCpkENPn4mlW0qp--nKJ8M2nRmla0HTuzMiV0G2B1FV774W-aovOePUe2-zd1h0LPv1xJSrfDsx-xZHNJCSqbItz1EvSggV2wXeX2KohggtWjDPKFD9P0FMix3gvjlteg6NkphbwERW"}
+Redirected to http://localhost:8080/#access_token=BQA7lRIQAmtGdFLRA7iOHZZaKo6wzX_iTwja6ZI63lI5zS0y76DdblYhXe1OZ1eNZqRyxCMot18z8bbFfx8H0ZFhhzzAcmxoh_4gQ5CT9MI7UZd9PTaQj_kiCva0gHdhfFd-aebfolVQD6QghKPPYxXuHImCugnC1oWARooKWHwvlzSHBRThGFU
+Completed 302 Found in 245ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?code=AQDt-S4JBHd0wFT00_uvzPN3lBGEJKwHIMfOm2P2qwStrYMUgseaHhq6irWZLAZHIxbJaVH8xiuOR_S5VW9PeekG51g31H4VjGBJJMcizh9Bj7SdsaSKosyURWuGMb0H73To4VIZQzzb46DT_NIfMznOU17NWwFmgo0VB1GXhfTcEGbn-ZV1stcT_chmDlmYnuKasBPooLtl0demplKz7vBcS_UjFydP7dJgJybeEoNgFyTSnGlr0V9xM1pbxXW1u9TE_mD-yjnoS6T0l5Do" for ::1 at 2019-07-11 15:28:32 -0500
+Processing by ApplicationController#refresh as HTML
+  Parameters: {"code"=>"AQDt-S4JBHd0wFT00_uvzPN3lBGEJKwHIMfOm2P2qwStrYMUgseaHhq6irWZLAZHIxbJaVH8xiuOR_S5VW9PeekG51g31H4VjGBJJMcizh9Bj7SdsaSKosyURWuGMb0H73To4VIZQzzb46DT_NIfMznOU17NWwFmgo0VB1GXhfTcEGbn-ZV1stcT_chmDlmYnuKasBPooLtl0demplKz7vBcS_UjFydP7dJgJybeEoNgFyTSnGlr0V9xM1pbxXW1u9TE_mD-yjnoS6T0l5Do"}
+Redirected to http://localhost:8080/#access_token=BQA3VgaiO3_pjvRc9Rns3MToeQz2mQ5cyUItTnqe-xsEy7S1X_TjTfHdWKwYQOsdNyfnFqqRx5lAulvtbXFtRT2hBkwcQCFeyOCBmsYk0r_jFu7UV0GRhLxv4NPvMWSjvaLyeqbTb6iocghHrj8qFjxJ3CcF_Mr6dep01BMkmLqKRQzVC5FLJeQ
+Completed 302 Found in 198ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?code=AQBbuwo0-spn1JQSdwU-jCcssYzJD7fW7XxFswtF_hoQKEWXliGAd8uYG5KD4paGBdfP-WHCMOfTpn1JIYercom9xSWXu3usGPf4L_XmGo2MR6eFfrNeWH8iSvnWKz4MtxG0GNFF09zhTtAyQhynvN5rDmlV3bpUMb0gPDFVG4K1JFyJFfOo5s2WmkUHBQJ30j_XCcWVEai_KYEpLpmzKvxhINzetnM1t5GV5_K1xyKxSNvvDrbQvOuWXieMw_JlrSenZ-rtosYH_aWXZkgI" for ::1 at 2019-07-11 15:29:31 -0500
+Processing by ApplicationController#refresh as HTML
+  Parameters: {"code"=>"AQBbuwo0-spn1JQSdwU-jCcssYzJD7fW7XxFswtF_hoQKEWXliGAd8uYG5KD4paGBdfP-WHCMOfTpn1JIYercom9xSWXu3usGPf4L_XmGo2MR6eFfrNeWH8iSvnWKz4MtxG0GNFF09zhTtAyQhynvN5rDmlV3bpUMb0gPDFVG4K1JFyJFfOo5s2WmkUHBQJ30j_XCcWVEai_KYEpLpmzKvxhINzetnM1t5GV5_K1xyKxSNvvDrbQvOuWXieMw_JlrSenZ-rtosYH_aWXZkgI"}
+Redirected to http://localhost:8080/#access_token=BQCisZ1IzPqxCwGl7X5_wyoj3lVYnV7OfP5xvdPYTL8rol1AzHbPjScAO99ov0uXxsqRMOL885msPuOwA0lBMr3dRkILqWuyhz4SPiFJV5p2p-StyBC8wdh94zadjlQUMs0AIN8NXWuHj3R5QT70xEy9RmvSZ1-tC5H8vEsa5sZvWsKlMN1KH5s
+Completed 302 Found in 195ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?code=AQDdtWmq0h8bE-9W7B48UxQ-mTycO7Uv4acwW2jfjgZUupslwG-MBi840OYMH5f0_JASeJFxIHt_c7yg9K_3iRN7Pbr_lVkIUB8KKkwA5z2Yf-NOqZqX1_R7QTzsjmRXTZDo14kN3OEgeFN0sV-tyhX5sPPTpx-GYijLzsJEDdhvrhen_Nt4G0nUSJC1_vx4EVgE6E-Q6MY7pRnP4wPRXQa1H6kCrCpoLYC5XImh9AUut3FF6aCL03djtIR_t-zhhXS-r6ovKkHRJFsn3_tP" for ::1 at 2019-07-11 15:29:39 -0500
+Processing by ApplicationController#refresh as HTML
+  Parameters: {"code"=>"AQDdtWmq0h8bE-9W7B48UxQ-mTycO7Uv4acwW2jfjgZUupslwG-MBi840OYMH5f0_JASeJFxIHt_c7yg9K_3iRN7Pbr_lVkIUB8KKkwA5z2Yf-NOqZqX1_R7QTzsjmRXTZDo14kN3OEgeFN0sV-tyhX5sPPTpx-GYijLzsJEDdhvrhen_Nt4G0nUSJC1_vx4EVgE6E-Q6MY7pRnP4wPRXQa1H6kCrCpoLYC5XImh9AUut3FF6aCL03djtIR_t-zhhXS-r6ovKkHRJFsn3_tP"}
+Redirected to http://localhost:8080/#access_token=BQALg97dMRchOPgujSfPzJVviZbtI1yvPtgSFZ_ea9Id8PrYEjT6faYoU9RPthdNakFuu9AhTT7HUliAYCLP523lIoOj54czrswfw91LIpJ8vJsI4rGSUfnNU4E4aBVjb8Rnsad6i4ZH5H--jGyOGzcPZajcxkm9Qdeu_3to9WhSN4X2EdgDi-Y
+Completed 302 Found in 239ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?code=AQCiZQDRw_WD4Z_SxfSevT7bkwX6EpaQr49h_NyhpBq3LtoVyt-G2P1bB8hfxfpJ4H3ADWBRgu1J451oVJFM-D5TbvWo8by_Gja4ALp7Or1nUng9PMN5oAH1xL3v4v0nRm53cJYgzIX7nsKThke81CWUU5ckxOaz8-othkOKdypjbqKr5gb59_PckUzxsQ1Q8vbpY31vZjKjfXiefZ-lGZUO855DURRe5cULQewQu--vIZNqIhNE175G_28cSB7bkXfutzKuSMCTSi7u_SU6" for ::1 at 2019-07-11 15:30:14 -0500
+Processing by ApplicationController#refresh as HTML
+  Parameters: {"code"=>"AQCiZQDRw_WD4Z_SxfSevT7bkwX6EpaQr49h_NyhpBq3LtoVyt-G2P1bB8hfxfpJ4H3ADWBRgu1J451oVJFM-D5TbvWo8by_Gja4ALp7Or1nUng9PMN5oAH1xL3v4v0nRm53cJYgzIX7nsKThke81CWUU5ckxOaz8-othkOKdypjbqKr5gb59_PckUzxsQ1Q8vbpY31vZjKjfXiefZ-lGZUO855DURRe5cULQewQu--vIZNqIhNE175G_28cSB7bkXfutzKuSMCTSi7u_SU6"}
+Completed 500 Internal Server Error in 183014ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `refresh'
+app/controllers/application_controller.rb:19:in `refresh'

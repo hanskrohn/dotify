@@ -12,7 +12,7 @@ class ApplicationController < ActionController::API
                     client_id: '55c12b17da23491c82c85edd1c942d61',
                     client_secret: '190d444411b04417816ac4550e9115c4'}, {'Content-Type': 'application/x-www-form-urlencoded'}
             rescue Exception => e 
-                byebug
+            
             end
         #They return a stringified version of the code
         #we needed to parse over the info and make it appear like an object ({})
