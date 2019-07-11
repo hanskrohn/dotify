@@ -1,0 +1,52 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+.card-img-top {
+  background-size: cover;
+  min-height: 180px;
+  background-position: center;
+}
+
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+.card {
+  margin-right: 100px;
+}
+.card-title {
+  color: green;
+}
+.g-links {
+  opacity: 1;
+  font-size: 120%;
+  margin-right: 75px;
+  color: black;
+}
+
+.jumbotron {
+  background-image: url("/public/scepa1.jpg");
+  background-position: center;
+  opacity: 0.65;
+  /* background-size: 100% 100%; */
+}
+
+.dropdown {
+  float: right;
+}
+
+.btn {
+  color: white;
+  background-color: #6758bb;
+}
+
+.search-field {
+  color: white;
+  /* opacity: ; */
+}
+
+body {
+  background-image: url("/public/girl.jpg");
+  background-position: center;
+  background-size: cover;
+}
