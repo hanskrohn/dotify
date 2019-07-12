@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2019_07_08_163517) do
 
   create_table "playlists", force: :cascade do |t|
     t.string "name"
-    t.string "img_url"
+    t.integer "my_playlist_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

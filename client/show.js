@@ -2,8 +2,17 @@ class Show {
   constructor() {
     let show = document.querySelector(".show");
     this.searchTextBox = document.querySelector(".search-box");
-
+    this.playlistBtn = document.querySelector(".playlist");
     this.submitBtn = document.querySelector(".submitBtn");
+    console.log(this.playlistBtn)
+    this.playlistBtn.addEventListener("click", e => {
+        e.preventDefault()
+        show.innerHTML = "";
+        fetch('http://localhost:3000/playlist')
+        .then(res => res.json())
+        .then(data => this.renderPlaylist(data))
+    })
+
     this.submitBtn.addEventListener("click", e => {
       e.preventDefault();
       show.innerHTML = "";
@@ -28,6 +37,38 @@ class Show {
           this.render(itemsArray);
         });
     });
+  }
+  renderPlaylist(array){
+    
+    console.log(array)
+    let show = document.querySelector(".show");
+    show.innerHTML = ""
+    let cardGroup = document.createElement("div");
+    cardGroup.className = "card-group";
+    
+        let div = document.createElement("div");
+        div.className = "card";
+
+        let cardImgTop = document.createElement("img");
+        cardImgTop.className = "card-img-top";
+        cardImgTop.src = "public/fire.jpg"
+
+        let cardDiv = document.createElement("div");
+        cardDiv.className = "card-body";
+
+        let h5 = document.createElement("h5");
+        h5.className = "card-title";
+        h5.innerText = "My Totally Super Awesome Fire Playlist"
+
+        let h7= document.createElement("h7");
+        h7.className = "playlist-size";
+        h7.innerText = "Total songs: " + array.length;
+
+        cardDiv.append(h5,h7);
+        div.append(cardImgTop, cardDiv);
+        cardGroup.append(div);
+    
+    show.append(cardGroup);
   }
   render(array) {
     console.log(array);
@@ -102,6 +143,7 @@ class Show {
       h5.className = "card-title";
       h5.innerText = array.items[i].name;
 
+
       cardDiv.append(h5);
       div.append(cardImgTop, cardDiv);
       cardGroup.append(div);
@@ -166,7 +208,23 @@ class Show {
       cardDiv.append(h5, h7);
       div.append(cardImgTop, cardDiv);
       cardGroup.append(div);
+      div.addEventListener("click", e => {
+        e.preventDefault();
+        console.log(array.items[i])
+        
+        fetch(`http://localhost:3000/add-song`, {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify({
+            name: array.items[i].name,
+            my_playlist_id: '1'
+        })
+        })
+    })
+        show.append(cardGroup);
     }
-    show.append(cardGroup);
-  }
+}
 }
